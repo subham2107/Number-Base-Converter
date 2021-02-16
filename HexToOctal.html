@@ -3,47 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="commonstyles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
   <script defer src="./HexToOctal.js"></script>
   <title>Hex To Octal</title>
 </head>
 <body>
-  <header>
-    <h1>Number Base Converter</h1>
+  <header class="navbar">
+    <div style="font-size: 30px;"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+      <div class="dropdown-nav">Number Base Converter <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
+      <div class="dropdown-content">
+    <a href="BinaryToDecimal.html">Binary To Decimal Converter</a>
+    <a href="BinaryToHex.html">Binary To Hex Converter</a>
+    <a href="BinaryToOctal.html">Binary To Octal Converter</a>
+    <a href="DecimalToBinary.html">Decimal To Binary Converter</a>
+    <a href="DecimalToHex.html">Decimal To Hex Converter</a>
+    <a href="DecimalToOctal.html">Decimal To Octal Converter</a>
+    <a href="HexToBinary.html">Hex To Binary Converter</a>
+    <a href="HexToDecimal.html">Hex To Decimal Converter</a>
+    <a href="#">Hex To Octal Converter</a>
+    <a href="OctalToBinary.html">Octal To Binary Converter</a>
+    <a href="OctalToDecimal.html">Octal To Decimal Converter</a>
+    <a href="OctalToHex.html">Octal To Hex Converter</a>
+      </div>
+      </div>
+
+      <div class="other-websites">
+        <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
+      </div> 
+      <div class="other-websites">
+        <a href="https://my-color-converter.netlify.app/rgb-hex" target="_blank">Color Converter</a>
+      </div>
+      <div class="other-websites">
+        <a href="https://my-time-stamp-converter.netlify.app/humantoepoch" target="_blank">Time Converter</a>
+      </div>
+      <div class="other-websites">
+        <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
+      </div>
+      <div class="other-websites">
+        <a href="#" >Unit Converters</a>
+      </div >        
   </header>
-
-  <nav>
-    <p>Check out other Number-Base converters here:</p>
-    <ul>
-    <li><a href="BinaryToDecimal.html">Binary To Decimal Converter</a></li>
-      <li><a href="BinaryToHex.html">Binary To Hex Converter</a></li>
-      <li><a href="BinaryToOctal.html">Binary To Octal Converter</a></li>
-      <li><a href="DecimalToBinary.html">Decimal To Binary Converter</a></li>
-      <li><a href="DecimalToHex.html">Decimal To Hex Converter</a></li>
-      <li><a href="DecimalToOctal.html">Decimal To Octal Converter</a></li>
-      <li><a href="HexToBinary.html">Hex To Binary Converter</a></li>
-      <li><a href="HexToDecimal.html">Hex To Decimal Converter</a></li>
-      <li><a href="#">Hex To Octal Converter</a></li>
-      <li><a href="OctalToBinary.html">Octal To Binary Converter</a></li>
-      <li><a href="OctalToDecimal.html">Octal To Decimal Converter</a></li>
-      <li><a href="OctalToHex.html">Octal To Hex Converter</a></li>
-      </ul>   
-
-  </nav>
-
-  <main>
+  <main class="main-content">
     <h2>Hex To Octal Converter</h2>
     <h3>Convert hex to octal:</h3>
+    <div style="margin-bottom:20px;">
     <textarea type="text" id="input" placeholder="Enter hex value." rows="15" cols="60"></textarea>
     <textarea type="text" id="output" placeholder="Your results will appear here." rows="15" cols="60"></textarea>
-    <br>
-    <br>
+  </div>
     <input type="button" id="convert-button" value= "Convert">
+    <input type="button" id="reset-button" value= "Reset">
   </main>
-  <hr>
 
-  <footer>
-    Contact me
-  </footer>
+  <section>
+    <div class="content-info" style="text-align: justify;">
+    <h3 style="padding-top: 10px;text-align: center;">What is number base?</h3>
+    <p>A German mathematician called Leopold Kronecker once said that "God gave us the integers, and all the rest is the work of man." I think what he was getting at is that numbers exist, but we can choose to represent them in different ways, and do different things with them. Without getting too philosophical, it helps to remember that, often, what we think of as numbers are actually symbols representing the number - just as the way you write your name isn't you, and you're still the same person if you type your name, write it in a different colour, or use a different alphabet.</p>
+      <p>Number bases are different ways of writing and using the same number. We use a system called base 10, or denary, for our arithmetic, but there are almost as many number bases as there are numbers. Many people think that we use base 10 because we have 10 fingers on which we can count. Computers, and other electronic devices, can only reliably use an electrical current, or the absence of a current, to count (like having two fingers), and so they tend to use base 2 (binary) internally.</p>
+     <p>You can check out more about it 
+       <a style="color:#388bfd;" href ="https://www.advanced-ict.info/mathematics/bases.html" target="_blank">here.</a></p>
+      </div> 
+    </section>
+  </div>
+
+  <div class="footer-wrapper">
+    <footer style="background-color:#24292e;">
+      <div class="footer-info" style="text-align: center;color:white;">
+        <p style="padding-top: 10px;">Check out my profiles here:</p>
+         <div class="footer-logo" >
+           <a href="https://www.linkedin.com/in/subham-mitra/" target="_blank"><img src="Images/linkedin.svg"></a>
+           <a style="margin-left: 10px;margin-right: 10px;" href="https://github.com/subham2107" target="_blank"><img src="Images/github.svg"></a>
+           <a href="https://twitter.com/subham2107" target="_blank"><img src="Images/twitter.svg"></a>
+          </div>
+      </div>
+    </footer>
+    </div>
 </body>
 </html>
 
