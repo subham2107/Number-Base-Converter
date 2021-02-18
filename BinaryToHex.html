@@ -43,19 +43,24 @@
           <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
         </div>
         <div class="other-websites">
-          <a href="#" >Unit Converters</a>
-        </div >        
+          <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
+        </div >       
     </header>
 
-  <main class="main-content">
-    <h2>Binary To Hex Converter</h2>
-    <h3>Convert binary to hex:</h3>
-    <div style="margin-bottom:20px;">
-    <textarea type="text" id="input" placeholder="Enter binary value." rows="15" cols="60"></textarea>
-    <textarea type="text" id="output" placeholder="Your results will appear here." rows="15" cols="60"></textarea>
-  </div>
+  <main >
+    <h2 style="text-align:center">Binary To Hex Converter</h2>
+    <h3 style="text-align:center">Convert binary to hex:</h3>
+    <div class="input-output">
+    <div>
+    <textarea style="margin-right: 15px;" type="text" id="input" placeholder="Enter binary value." rows="15" cols="60"></textarea>
+    <textarea type="text" id="output" placeholder="Your results will appear here." rows="15" cols="60" readonly></textarea>
+    <div style="margin-top:20px;">
+      <div>
     <input type="button" id="convert-button" value= "Convert">
     <input type="button" id="reset-button" value= "Reset">
+    </div>
+  </div>
+    </div>
   </main>
 
   <section>
