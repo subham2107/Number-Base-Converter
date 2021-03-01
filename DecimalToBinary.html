@@ -12,8 +12,18 @@
 <body>
   <div class="non-footer">
     <header class="navbar">
-      <div style="font-size: 30px;"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
-        <div class="dropdown-nav">Number Base Converter <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
+      <div class="dropdown-nav" ><img id="hamburger" style="margin-top: 14px;" src ="Images/menu-24px.svg">
+        <div class="dropdown-content" >
+          <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
+          <a href="https://my-time-stamp-converter.netlify.app/humantoepoch" target="_blank">Time Converter</a>
+          <a href="https://my-color-converter.netlify.app/rgb-hex" target="_blank">Color Converter</a>
+          <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
+          <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
+
+
+        </div>
+      </div>
+      <div class="dropdown-nav">Base Converter <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
         <div class="dropdown-content">
       <a href="BinaryToDecimal.html">Binary To Decimal Converter</a>
       <a href="BinaryToHex.html">Binary To Hex Converter</a>
@@ -29,22 +39,9 @@
       <a href="OctalToHex.html">Octal To Hex Converter</a>
         </div>
         </div>
+        <div class="util"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+     
 
-        <div class="other-websites">
-          <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
-        </div> 
-        <div class="other-websites">
-          <a href="https://my-color-converter.netlify.app/rgb-hex" target="_blank">Color Converter</a>
-        </div>
-        <div class="other-websites">
-          <a href="https://my-time-stamp-converter.netlify.app/humantoepoch" target="_blank">Time Converter</a>
-        </div>
-        <div class="other-websites">
-          <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
-        </div>
-        <div class="other-websites">
-          <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
-        </div >        
     </header>
 
 
@@ -52,17 +49,18 @@
     <h2 style="text-align: center;">Decimal To Binary Converter</h2>
     <h3 style="text-align: center;">Convert decimal to binary:</h3>
     <div class="input-output">
-    <div>
-    <textarea style="margin-right: 15px;" type="text" id="input" placeholder="Enter decimal value." rows="15" cols="60"></textarea>
-    <textarea type="text" id="output" placeholder="Your results will appear here." rows="15" cols="60" readonly></textarea>
-  </div>
-  <div style="margin-top:20px;">
-    <div>
-  <input type="button" id="convert-button" value= "Convert">
-  <input type="button" id="reset-button" value= "Reset">
-  </div>
-</div>
-  </div>
+      <div>
+      <textarea type="text" id="input" placeholder="Enter input" rows="15" cols="60"></textarea>
+      </div>
+      <div style="margin-top:20px;margin-bottom:20px;">
+      <input type="button" id="convert-button" value= "Convert">
+      <input style="margin-left:20px;" type="button" id="reset-button" value= "Reset">
+    </div>
+      <div>
+      <textarea type="text" id="output" placeholder="Output" rows="15" cols="60" readonly></textarea>
+    </div>
+    
+    </div>
 </main>
 
   <section>
