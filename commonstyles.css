@@ -1,6 +1,4 @@
-
-  
-body{
+ body{
   margin:0;
   background-color: #f6f8fa;
   font-family: 'Work Sans', sans-serif;
@@ -14,11 +12,13 @@ body{
   color: #fff;
   font-size: 16px;
   line-height: 1.4;
-  padding: 10px 30px;
+  padding: 10px;
   border-radius: 3px;
   cursor: pointer;
   border: none;
   font-family: inherit;
+  min-width: 100px;
+  max-width: 100px;
   
       
 }
@@ -28,11 +28,13 @@ background-color: #f12e27;
 color: #fff;
 font-size: 16px;
 line-height: 1.4;
-padding: 10px 30px;
+padding: 10px;
 border-radius: 3px;
 cursor: pointer;
 border: none;
 font-family: inherit;
+min-width: 100px;
+max-width: 100px;
 
 
 }
